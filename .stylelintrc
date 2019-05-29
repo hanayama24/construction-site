@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-css-modules",
+    "stylelint-config-property-sort-order-smacss"
+  ],
+  "plugins": [
+    "@namics/stylelint-bem"
+  ],
+  "rules": {
+    "indentation": "tab",
+    "plugin/stylelint-bem-namics": {
+      "patternPrefixes": [],
+      "helperPrefixes": [
+        "is",
+        "has",
+        "u"
+      ]
+    }
+  }
+}
